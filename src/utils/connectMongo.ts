@@ -28,13 +28,13 @@ export async function connectToMongo(mongoDb): Promise<any> {
   }
 
   // set the connection options
-  const opts = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  };
+  // const opts = {
+  //   useNewUrlParser: true,
+  //   useUnifiedTopology: true
+  // };
 
   // Connect to cluster
-  const client = new MongoClient(MONGODB_URI, opts);
+  const client = new MongoClient(MONGODB_URI); //, opts
   await client.connect();
   const db = client.db(mongoDb); //MONGODB_DB
 
