@@ -1,0 +1,7 @@
+query NoteList($limit: Int!, $cursor: Int){
+	notes(limit: $limit, cursor: $cursor){
+		id,
+		title,
+		text,
+	}
+}

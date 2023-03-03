@@ -1,0 +1,4 @@
+fragment RegularNoteError on FieldError {
+    field,
+    message
+}

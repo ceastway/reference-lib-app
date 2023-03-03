@@ -1,0 +1,41 @@
+.list-item{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: var(--base-sizes-16);
+    margin-top: var(--base-space-2);
+    padding-inline-start: var(--base-space-4);
+    padding-inline-end: var(--base-space-4);
+    padding-top: var(--base-space-2);
+    padding-bottom: var(--base-space-2);
+    border-radius: var(--base-radii-lg);
+    background: var(--base-colors-gray-100);
+}
+
+// YOU ARE HERE add aria-selected to preselect items
+
+a .list-item:hover, a[aria-selected="true"] .list-item{
+    background: var(--base-color-3);
+    color: var(--base-colors-white);
+}
+
+a li.list-item:hover svg.hoverWhite, a li.list-item:hover span.hoverWhite {
+    color: #FFF !important;
+    stroke: #FFF !important;
+}
+
+.list-item .content-container{
+    flex: 1 1 0%;
+    margin-left: var(--base-space-4);
+}
+
+.list-item .content-container .cat-name{
+    font-weight: var(--base-fontWeights-medium);
+    font-size: var(--base-fontSizes-xs);
+    opacity: 0.7;
+}
+
+.list-item .content-container .item-name{
+    font-weight: var(--base-fontWeights-semibold);
+}
+

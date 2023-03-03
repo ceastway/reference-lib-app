@@ -1,0 +1,13 @@
+query RefItem($cat: Float!, $limit: Int!){
+	refItems(limit: $limit, cat: $cat){
+		id,
+        cat,
+        order,
+		name,
+        exampleString,
+        result,
+        result2Label,
+        result2,
+		createdAt
+	}
+}

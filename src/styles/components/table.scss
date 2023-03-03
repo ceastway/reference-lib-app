@@ -1,0 +1,90 @@
+// .myTable, .myTable th,  .myTable td  {
+//     border: solid 1px #000;
+// }
+
+table.myTable {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.myTable caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table.myTable tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table.myTable th,
+table.myTable td, table.myTable tr.table-row:hover td .modal {
+    padding: .625em;
+    text-align: center;
+    color: #333;
+}
+
+table.myTable th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+table.myTable tr.table-row:hover td{
+    background-color: var(--base-color-1);
+    color: var(--base-color-2);
+}
+
+@media screen and (max-width: 600px) {
+    table.myTable {
+        border: 0;
+    }
+
+    table.myTable caption {
+        font-size: 1.3em;
+    }
+
+    table.myTable thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table.myTable tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table.myTable td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table.myTable td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table.myTable td:last-child {
+        border-bottom: 0;
+    }
+}

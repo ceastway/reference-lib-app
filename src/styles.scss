@@ -1,0 +1,43 @@
+@import 'styles/main/main.scss';
+
+@import 'styles/components/autocomplete.scss';
+@import 'styles/components/button.scss';
+@import 'styles/components/listItem.scss';
+@import 'styles/components/modal.scss';
+@import 'styles/components/myFlex.scss';
+@import 'styles/components/myInput.scss';
+@import 'styles/components/search.scss';
+@import 'styles/components/table.scss';
+@import 'styles/components/toggleSwitch.scss';
+
+@import 'styles/references/formik.scss';
+
+@import 'styles/fonts/fa-brands.scss';
+@import 'styles/fonts/fa-regular.scss';
+@import 'styles/fonts/fa-solid.scss';
+
+// a:hover {
+//     cursor: pointer;
+// }
+
+.light-theme {
+    --base-fontSizes-md: 16px;
+    --base-radii-md: 6px;
+    --base-sizes-10: 40px;
+    --base-space-4: 16px;
+
+    --base-color-1: #457b9d;
+    --base-color-2: #f1faee;
+    --base-color-3: #1d3557;
+    --base-color-4: #e63946;
+    --base-color-5: #a8dadc;
+
+    --base-errorcolor-1: red;
+}
+
+// mobile only
+@media screen and (min-width: 600px) {
+    .mobile-only{display: none;}
+}
+
+

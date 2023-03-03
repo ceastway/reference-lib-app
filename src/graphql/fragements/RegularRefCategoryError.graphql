@@ -1,0 +1,4 @@
+fragment RegularRefCategoryError on FieldError {
+    field,
+    message
+}

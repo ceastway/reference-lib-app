@@ -1,0 +1,6 @@
+query Animals($orderBy: String!, $limit: Int!, $animalNameWhere: String!){
+	animals(orderBy: $orderBy, limit: $limit, animalNameWhere: $animalNameWhere){
+		id,
+		AnimalName
+	}
+}

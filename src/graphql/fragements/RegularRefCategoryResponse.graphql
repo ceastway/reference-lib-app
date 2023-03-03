@@ -1,0 +1,8 @@
+fragment RegularRefCategoryResponse on RefCategoryResponse {
+    errors {
+        ...RegularRefCategoryError
+    }
+    refCategory {
+    ...RegularRefCategory
+    }
+}

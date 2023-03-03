@@ -1,0 +1,5 @@
+mutation CreateRefCategory($categoryName: String!) {
+  createRefCategory(options: {name: $categoryName, todo: 1}) {
+      ...RegularRefCategoryResponse
+  }
+}

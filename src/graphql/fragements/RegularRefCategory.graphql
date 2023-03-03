@@ -1,0 +1,4 @@
+fragment RegularRefCategory on RefCategory {
+    id,
+    name
+}

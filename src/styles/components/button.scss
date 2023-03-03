@@ -1,0 +1,29 @@
+.myButton {
+    color: var(--base-color-2) !important;
+    background-color: var(--base-color-1);
+}
+
+.myButton:hover {
+    background-color: var(--base-color-3);
+}
+
+.whiteButton {
+    color: var(--base-color-1);
+    background-color: #FFF;
+    border: solid 1px var(--base-color-1);
+}
+
+.whiteButton:disabled {
+    color: #ccc;
+    background-color: #FFF;
+    border: solid 1px #ccc;
+    cursor: default;
+}
+
+.whiteButton:disabled span {
+    color: #ccc !important;
+}
+
+// .whiteButton:hover {
+//     background-color: var(--base-color-3);
+// }

@@ -1,0 +1,57 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "gen": "graphql-codegen --config codegen.yml",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@brass-raven/core": "../../brass-raven-code/core/build",
+    "@chakra-ui/form-control": "^2.0.17",
+    "@chakra-ui/layout": "^2.1.16",
+    "@chakra-ui/react": "^2.5.1",
+    "@chakra-ui/textarea": "^2.0.18",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@urql/exchange-graphcache": "^5.0.1",
+    "formik": "^2.2.9",
+    "framer-motion": "^9.0.4",
+    "graphql": "^16.6.0",
+    "mongodb": "^4.13.0",
+    "next": "latest",
+    "next-urql": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "react-popupbox": "^2.0.9",
+    "sass": "^1.55.0",
+    "urql": "^3.0.3"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.12.0",
+    "@graphql-codegen/typescript": "2.7.3",
+    "@graphql-codegen/typescript-operations": "2.5.3",
+    "@graphql-codegen/typescript-react-apollo": "3.3.3",
+    "@graphql-codegen/typescript-urql": "^3.7.0",
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.2",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.27.0",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.7.2",
+    "yup": "^0.32.11"
+  },
+  "resolutions": {
+    "react": "18.2.0"
+  },
+  "version": "0.0.0",
+  "packageManager": "yarn@3.3.0"
+}

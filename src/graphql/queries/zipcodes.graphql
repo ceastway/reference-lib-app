@@ -1,0 +1,9 @@
+query Zipcodes($orderBy: String!, $limit: Int!, $locationTextWhere: String!){
+	zipcodes(orderBy: $orderBy, limit: $limit, locationTextWhere: $locationTextWhere){
+		id,
+		Zipcode,
+		LocationText,
+		Lat,
+		Long
+	}
+}

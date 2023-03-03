@@ -1,0 +1,4 @@
+fragment RegularPostError on FieldError {
+    field,
+    message
+}

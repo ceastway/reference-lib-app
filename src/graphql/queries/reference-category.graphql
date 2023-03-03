@@ -1,0 +1,8 @@
+query RefCategory($refCategoryId: Int!){
+	refCategory(refCategoryId: $refCategoryId){
+		id,
+		name,
+		todo,
+		createdAt
+	}
+}

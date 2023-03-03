@@ -1,0 +1,7 @@
+query Note($noteId: Int!){
+	note(noteId: $noteId){
+		id,
+		title,
+		text,
+	}
+}

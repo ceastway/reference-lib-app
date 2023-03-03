@@ -1,0 +1,5 @@
+mutation CreateNote($title: String!, $text:String!) {
+    createNote(options: {title: $title, text: $text}) {
+      ...RegularNoteResponse
+    }
+  }

@@ -1,0 +1,8 @@
+query RefCategorys($limit: Int!){
+	refCategorys(limit: $limit){
+		id,
+		name,
+		todo,
+		createdAt
+	}
+}

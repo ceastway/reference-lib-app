@@ -1,0 +1,5 @@
+fragment RegularNote on Note {
+    id,
+    title,
+    text
+}

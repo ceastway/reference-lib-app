@@ -1,0 +1,8 @@
+fragment RegularNoteResponse on NoteResponse {
+    errors {
+        ...RegularNoteError
+    }
+    note {
+    ...RegularNote
+    }
+}
