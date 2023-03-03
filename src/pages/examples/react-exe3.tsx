@@ -2,7 +2,7 @@
 http://localhost:3000/references/react-exe3
 */
 import React, { useEffect, useRef } from 'react';
-import { Layout } from '../../components';
+import { Layout } from '../../fragments';
 
 const ReactExe3: React.FC = () => {
 

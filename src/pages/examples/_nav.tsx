@@ -1,11 +1,15 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Form, Formik } from 'formik';
-import { InputSearchField, Layout, Loading} from '../../components';
-import { useRefCategoryQuery } from '../../generated/graphql';
+import { Loading } from '@components/loading';
+import { InputSearchField } from '@components/input-field-search';
+import { Layout } from '../../fragments';
+import { useRefCategorysQuery } from '../../generated/graphql';
 
 const ExampleNav: React.FC = () => {
 
-  const [refCategoryResults] = useRefCategoryQuery({variables:{limit: 0}});
+  const [refCategoryResults] = useRefCategorysQuery({
+    variables: { limit: 0 }
+  });
   const [searchString, setSearchString] = useState('');
   const [searchResultsStringProp, setSearchResultsStringProp] = useState<{
       id: number;

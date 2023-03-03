@@ -1,9 +1,9 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Formik } from 'formik';
 import { advancedSchema } from './yup-schema';
-import { MyFormikInput } from 'components/formik-input';
-import { MyFormikSelect } from 'components/formik-select';
-import { MyFormikCheckbox } from '../../components/formik-checkbox';
+import { FormikInput } from '@components/formik-input';
+import { FormikSelect } from '@components/formik-select';
+import { FormikCheckbox } from '@components/formik-checkbox';
 
 const onSubmit = async (values, actions): Promise<void> => {
   try {
@@ -24,11 +24,11 @@ const onSubmit = async (values, actions): Promise<void> => {
 };
 
 export const AdvancedForm = (): JSX.Element => {
-  const [todoChecked, setTodoChecked] = useState(true);
+  // const [todoChecked, setTodoChecked] = useState(true);
 
-  function handleChecked(): void {
-    setTodoChecked(!todoChecked);
-  }
+  // function handleChecked(): void {
+  //   setTodoChecked(!todoChecked);
+  // }
 
   return (
     <>
@@ -39,13 +39,13 @@ export const AdvancedForm = (): JSX.Element => {
       >
         {({ isSubmitting, handleSubmit }): JSX.Element => (
           <form onSubmit={handleSubmit}>
-            <MyFormikInput
+            <FormikInput
               label='Username'
               name='username'
-              type='text'
-              placeholder='Enter your username'
+              // type='text'
+              // placeholder='Enter your username'
             />
-            <MyFormikSelect
+            <FormikSelect
               label='Job Type'
               name='jobType'
             >
@@ -54,18 +54,16 @@ export const AdvancedForm = (): JSX.Element => {
               <option value='designer'>Designer</option>
               <option value='manager'>Manager</option>
               <option value='other'>Other</option>
-            </MyFormikSelect>
-            <MyFormikCheckbox
+            </FormikSelect>
+            <FormikCheckbox
               label='Please accept our terms of service'
               name='acceptedTos'
-              type='checkbox'
             />
-            <MyFormikCheckbox
-              onChange={handleChecked}
+            <FormikCheckbox
+              // onChange={handleChecked}
               label='Include Todos (bound checkbox example)'
               name='includeTodos'
-              type='checkbox'
-              checked={todoChecked}
+              // checked={todoChecked}
             />
             <button
               disabled={isSubmitting}

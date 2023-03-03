@@ -1,4 +1,9 @@
 class Point {
+  x: number;
+  y: number;
+  displayName: string;
+  distance: number;
+
   constructor(x, y) {
     this.x = x;
     this.y = y;

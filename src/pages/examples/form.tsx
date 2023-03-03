@@ -4,8 +4,8 @@ http://localhost:3000/references/form
 basic example of a form
 */
 import { useState, FormEvent } from 'react';
-import { ToggleSwitch } from 'components';
-import { Checkbox } from 'components/input-checkbox';
+import { ToggleSwitch } from '@components/toggle-switch';
+import { Checkbox } from '@components/input-checkbox';
 
 interface FormDataProps {
   name: string;
@@ -40,11 +40,11 @@ const FormExe = ():JSX.Element => {
   const [ formFieldErrors, setFormFieldErrors ] = useState(initialFormErrors);
   const [ formSubmitResponse, setFormSubmitResponse ] = useState<FormSubmitResponseProps>({success: null, message:''});
 
-  function handleChecked(): void {
-    setFormData(prev => {
-      return { ...prev, todoChecked: !prev.todoChecked };
-    });
-  }
+  // function handleChecked(): void {
+  //   setFormData(prev => {
+  //     return { ...prev, todoChecked: !prev.todoChecked };
+  //   });
+  // }
 
   function handleToggle( toggleParam ): void {
     setFormData(prev => {
@@ -176,7 +176,7 @@ const FormExe = ():JSX.Element => {
           checkboxChecked = { formData.todoChecked }
           checkboxLabel = "Add Todo's"
           checkboxName = 'addTodos'
-          checkboxOnChange={ handleChecked }
+          // checkboxOnChange={ handleChecked }
           checkboxValue = "1"
         />
 

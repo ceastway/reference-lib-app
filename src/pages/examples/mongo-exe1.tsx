@@ -74,7 +74,7 @@ const MongoExe1: React.FC<MongoExe1> = () => {
       }
     }
 
-    ///addUser();
+    addUser();
 
     // if (query !== ''){
     //   fetchData();
